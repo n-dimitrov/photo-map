@@ -1,0 +1,7 @@
+streamlit
+pillow
+exifread
+streamlit-folium
+folium
+geopy
+requests
