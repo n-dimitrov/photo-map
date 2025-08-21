@@ -267,7 +267,7 @@ class PhotoLocationUI:
         # Show image (limit size)
         try:
             image = Image.open(uploaded_file)
-            st.image(image, caption="Uploaded Photo", use_column_width=True)
+            st.image(image, caption="Uploaded Photo")
         except Exception:
             st.error("Could not open image.")
             return
@@ -296,7 +296,7 @@ class PhotoLocationUI:
                 st.info("Photo has EXIF but no GPS location.")
 
         # Display metadata and map
-        
+
         self.display_metadata(date_taken, coordinates, address)
         self.display_map(coordinates)
 
